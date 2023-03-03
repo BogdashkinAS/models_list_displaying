@@ -44,7 +44,6 @@ def show_book(request, date):
         if books_list[next_date] == str(i.pub_date):
             n_date = i.pub_date
 
-    print(books)
     context = {
         'books': books,
         'previous_date': books_list[previous_date],
